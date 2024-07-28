@@ -6,6 +6,8 @@ class ServerSettings(BaseSettings):
     app_host: str = "0.0.0.0"
     app_port: int = 8000
 
+    model_name: str = "BAAI/bge-small-zh-v1.5"
+
     class Config:
         env_file = ".env"
 
